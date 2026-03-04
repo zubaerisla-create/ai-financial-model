@@ -1,1 +1,1 @@
-web: gunicorn projectname.wsgi
+web: gunicorn financial_simulator.wsgi
