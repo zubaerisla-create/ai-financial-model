@@ -56,6 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+PORT = os.environ.get("PORT")
+
 ROOT_URLCONF = 'financial_simulator.urls'
 
 TEMPLATES = [
