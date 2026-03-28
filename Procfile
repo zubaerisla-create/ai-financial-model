@@ -1,1 +1,1 @@
-web: gunicorn financial_simulator.wsgi
+web: gunicorn financial_simulator.wsgi:application
