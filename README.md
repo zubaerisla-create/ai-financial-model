@@ -99,11 +99,11 @@ Required fields:
 - `currentSavings` (float, >= 0)
 - `dependents` (int, >= 0)
 - `householdResponsibilityLevel` (choice)
-  - `all_or_most` | `half` | `small_part` | `not_applicable`
+  - `all_or_most` | `half` | `not_applicable`
 - `incomeStability` (choice)
-  - `very_stable` | `mostly_stable` | `sometimes_changes` | `unpredictable`
+  - `very_stable` | `mostly_stable` | `unpredictable`
 - `riskTolerance` (choice)
-  - `safety` | `balanced` | `risk_ok`
+  - `safe` | `balanced` | `risk_ok`
 - `purchaseAmount` (float, >= 0)
 - `paymentType` (choice)
   - `full` | `loan`

@@ -91,7 +91,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
         conn_max_age=600,
-        ssl_require=False if os.getenv('DATABASE_URL', '').startswith('sqlite') else True
+        ssl_require=False if (not os.getenv('DATABASE_URL') or os.getenv('DATABASE_URL', '').startswith('sqlite')) else True
     )
 }
 

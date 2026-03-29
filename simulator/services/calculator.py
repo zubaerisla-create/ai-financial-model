@@ -39,7 +39,7 @@ def calculate_financial_impact(data: dict):
 
     if data["incomeStability"] == "unpredictable":
         risk_multiplier += 0.2
-    if data["riskTolerance"] == "safety":
+    if data["riskTolerance"] == "safe":
         risk_multiplier += 0.1
 
     adjusted_ratio = income_ratio * risk_multiplier
